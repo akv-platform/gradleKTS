@@ -1,0 +1,1 @@
+/Users/andrey/git/trash/GradleKTS/buildSrc/build/classes/kotlin/main/Apps.class:/Users/andrey/git/trash/GradleKTS/buildSrc/build/classes/kotlin/main/Libs.class:/Users/andrey/git/trash/GradleKTS/buildSrc/build/classes/kotlin/main/TestLibs.class:/Users/andrey/git/trash/GradleKTS/buildSrc/build/classes/kotlin/main/Versions.class
