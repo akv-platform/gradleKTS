@@ -11,7 +11,6 @@ android {
         create("release") {
             keyAlias = "androidKey"
             keyPassword = "android"
-            storeFile = file("gradleKTS.keystore")
             storePassword = "android"
         }
     }
