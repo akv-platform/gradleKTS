@@ -27,6 +27,10 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+    productFlavors {
+        create("live") { }
+        create("internal") { }
+    }
 }
 
 dependencies {
