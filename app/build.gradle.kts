@@ -27,9 +27,14 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+    flavorDimensions("dimensions")
     productFlavors {
-        create("live") { }
-        create("internal") { }
+        create("live") {
+            setDimension("dimension")
+        }
+        create("internal") {
+            setDimension("dimension")
+        }
     }
 }
 
