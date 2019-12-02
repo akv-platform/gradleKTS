@@ -7,6 +7,14 @@ plugins {
 android {
     compileSdkVersion(Apps.compileSdk)
     buildToolsVersion(Apps.buildToolsVersion)
+    signingConfigs {
+        create("release") {
+            keyAlias = "androidKey"
+            keyPassword = "android"
+            storeFile = file("gradleKTS.keystore")
+            storePassword = "android"
+        }
+    }
     defaultConfig {
         minSdkVersion(Apps.minSdk)
         targetSdkVersion(Apps.targetSdk)
@@ -25,6 +33,7 @@ android {
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     productFlavors {
