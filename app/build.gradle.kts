@@ -36,9 +36,14 @@ android {
             signingConfig = signingConfigs.getByName("release")
         }
     }
+    flavorDimensions("dimension")
     productFlavors {
-        create("live") { }
-        create("internal") { }
+        create("live") {
+            setDimension("dimension")
+        }
+        create("internal") {
+            setDimension("dimension")
+        }
     }
 }
 
